@@ -1,0 +1,17 @@
+<app-page-header title="Project" (parentComponentNameEvent)="getComponentName($event)"></app-page-header>
+
+
+<div>
+    <a [routerLink]="['settings']" routerLinkActive="router-link-active" >reload</a>
+</div>
+
+<div *ngIf="componentName" class="alert alert-success">{{componentName}}</div>
+<button class="btn btn-warning" (click)="getFoodList()">Get Foods List</button>
+<div>
+    <p *ngFor="let food of foodList">
+        <strong class="text-primary">{{food.name}}</strong><span style="font-size: 1.2em;"> {{food.price | currency:'INR'}}</span> <br>
+        <small>{{food.description}}</small>
+    </p>
+    
+
+</div>

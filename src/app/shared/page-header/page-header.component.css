@@ -1,0 +1,8 @@
+.title {
+    font-size: 1.2em;
+}
+
+.button-right-align {
+    display: flex; 
+    justify-content: flex-end;
+}

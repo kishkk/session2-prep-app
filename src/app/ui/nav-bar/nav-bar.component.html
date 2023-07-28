@@ -1,0 +1,46 @@
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Partner Forms</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/project']" 
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/master-data" 
+            routerLinkActive="active"
+            >Master Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/manage-library" 
+            routerLinkActive="active"
+            >Manage Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/user-management" 
+            routerLinkActive="active"
+            >User Mgmt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/settings" 
+            routerLinkActive="active"
+            >Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/annual-maintenance" 
+            routerLinkActive="active"
+            >Annaul Maint.</a>
+          </li>
+          
+
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
